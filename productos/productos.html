@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Margarita Casa Floral</title>
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <link rel="stylesheet" type="text/css" href="../estilos.css">
+  <a class="redes" href="https://wa.me/523111437790">
+    <img src="/img/wp.png">
+  </a>
+</head>
+
+<body>
+
+  <header>
+    <img src="../img/logo.png" id="logo" alt="Logotipo">
+    <img src="../img/hojas.png" class="hojas-img">
+    <h1>Margarita Casa Floral</h1>
+  </header>
+
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="../nosotros/nosotros.html">Nosotros</a>
+    <a href="../contacto/contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+
+    <section class="products">
+
+      <div class="product">
+        <h2>Ramo de 4 flores</h2>
+        <p>Expresa tus sentimientos con un precioso ramo de margaritas, rosas, girasoles o tulipanes.
+          Son las flores predilectas de esas personas especiales en tu vida.
+          <strong>Contiene 4 flores </strong>frescas cuidadosamente seleccionadas por temporada de nuestro invernadero,
+          en alegres colores y diferentes texturas que alegrarán cualquier lugar y brindarán un obsequio
+          lleno de cariño y belleza.
+        </p>
+        <img src="../img/ramos/4.jpg" id="ramo 4" alt="ramo de 4 flores">
+        <br>
+        <br>
+        <button onclick="showModal('ramo4')">Comprar</button>
+      </div>
+
+      <div class="product">
+        <h2>Ramo de 12 flores</h2>
+        <p>Este sublime ramo <strong>con 12 </strong>rosas rojas, o la flor que desees, hará sin duda que tu ser amado
+          se
+          sienta apreciado y sorprendido. Cultivadas en nuestro propio invernadero y cortadas justo antes de
+          su máximo esplendor, estas magníficas flores representan la pasión y el romance que sientes.
+          Ya sea para una cita especial, San Valentín o un aniversario, nuestro ramo de rosas rojas es la mejor
+          forma de expresar tu amor.</p>
+        <img src="../img/ramos/12.jpg" id="ramo 12" alt="ramo de 12 flores">
+        <br>
+        <br>
+        <button onclick="showModal('ramo12')">Comprar</button>
+      </div>
+
+      <div class="product">
+        <h2>Ramo de 22 flores</h2>
+        <p><strong>Con 22 </strong>margaritas, o la flor que desees, expresarás tu afecto por todo lo alto. Cultivadas
+          en nuestro
+          invernadero con los más altos estándares de calidad, estas flores representan la realeza por su color tan
+          singular y los cuidados dedicados a su crecimiento.</p>
+        <p>Este sublime ramo con tantas flores será el centro de atención en cualquier espacio, su fragancia y presencia
+          llenarán de alegría a tu ser especial. Ya sea para celebrar un logro, agradecer un gesto generoso o hacer
+          sonreír a tu pareja, este arreglo floral hará lucir tus sentimientos.</p>
+        <img src="../img/ramos/22.jpg" id="ramo 22" alt="ramo de 22 flores">
+        <br>
+        <br>
+        <button onclick="showModal('ramo22')">Comprar</button>
+      </div>
+
+    </section>
+
+    <!-- Ventana Modal -->
+    <div id="orderModal" class="modal">
+
+      <!-- Contenido del Modal -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3><br>Completa la información de tu pedido</h3>
+        <form class="form-products">
+
+          <label for="flower">Tipo de flor:</label>
+          <select id="flower" name="flower">
+            <option value="girasol">Girasol</option>
+            <option value="rosa">Rosa</option>
+            <option value="margarita">Margarita</option>
+            <option value="tulipan">Tulipán</option>
+          </select>
+
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name">
+
+          <label for="phone">Teléfono:</label>
+          <input type="text" id="phone" name="phone" pattern="[0-9]{10}">
+          <button>Enviar</button>
+
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Derechos reservados Margarita Casa Floral ®<br>
+      Zaragoza Pte. 156, Camichín, 63440 Tecuala, Nay. - <a href="../contacto/contacto.html">Contactános</a>
+    </p>
+  </footer>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

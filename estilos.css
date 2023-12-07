@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    background-color: white;
+}
+
+header {
+    background: linear-gradient(to top, #96ff6680, #c3ffa780);
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    float: left;
+    display: flex;
+    width: 99%;
+    background: linear-gradient(to top, #5aff0d80, #c3ffa780);
+    padding: 10px;
+}
+
+footer p {
+    font-family: 'Arial';
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: #F2C959;
+    text-shadow: 0px 3px 4px #0000003a;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ol {
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+.hojas-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: auto;
+    opacity: 80%;
+}
+
+/* Bar de Navegacion */
+nav {
+    font-family: 'Marcellus', serif;
+    background: linear-gradient(to bottom, #96ff6680, #5aff0d80);
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: #386921;
+    text-decoration: none;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 4px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* Cambio de color al hover */
+nav a:hover {
+    color: #F2C959;
+}
+
+.intro {
+    text-align: justify;
+    padding: 0;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 1px;
+    width: 60%;
+    float: left;
+}
+
+h2 {
+    color: #46722B;
+    text-shadow: 0px 2px 2px #0000003a;
+}
+
+.video-principal {
+    box-shadow: 2px 2px 10px #bbb;
+    position: absolute;
+    width: 440px;
+    margin-left: 24px;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+
+.destacado {
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 1px;
+    width: 99%;
+    float: left;
+}
+
+.slideshow {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: -80px;
+    margin-left: 43%;
+}
+
+.slide img {
+    box-shadow: 2px 2px 10px #bbb;
+    width: 200px;
+    height: 200px;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: slide 12s infinite;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 0;
+    }
+
+    66.66% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 8s;
+}
+
+h3 {
+    color: #66a53f;
+    text-shadow: 0px 1px 1px #0000003a;
+}
+
+/* Estilos para el Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10% auto;
+    width: 600px;
+    height: 430px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    animation-name: modalopen;
+    animation-duration: 2s;
+}
+
+.modal-content h3 {
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 12px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product {
+    padding: 0;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 1px;
+    width: 99%;
+    float: left;
+    text-align: center;
+}
+
+.product h2 {
+    text-align: left;
+}
+
+.product img {
+    box-shadow: 2px 2px 10px #bbb;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.product button {
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #066C3D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.product button:hover {
+    transition: background-color 0.3s;
+    background-color: #386921;
+}
+
+.form-products {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    display: block;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #449d44;
+}
+
+.valores {
+    padding: 0;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 1px;
+    width: 99%;
+    float: left;
+    text-align: left;
+}
+
+.valores {
+    background-image: url('img/backg.png');
+}
+
+.contacto {
+    padding: 0;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 1px;
+    width: 99%;
+    float: left;
+    text-align: left;
+}
+
+.form-contact {
+    position: absolute;
+    top: 250px;
+    right: 60px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+    .form-contact {
+        position: static;
+        width: 100%;
+    }
+}
+
+.form-contact textarea {
+    min-height: 100px;
+    min-width: 374px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    resize: none;
+}
+
+.redes img[src="/img/wp.png"] {
+    width: 50px;
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+}
